@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import NavbarStyled from './Navbar.styled'
 import { Button, theme } from 'antd'
-import { MenuOutlined } from '@ant-design/icons';
+import { MenuOutlined, PhoneFilled, CloseOutlined } from '@ant-design/icons';
 import logo from '../../assets/images/logo-robgam.svg' // relative path to image 
 
 export default function Navbar() {
@@ -23,10 +23,10 @@ export default function Navbar() {
 
         <div className="navigation">
           <Button
+            size='large'
             onClick={onClick}
             className="icon"
-            type="primary"
-            icon={<MenuOutlined />}
+            icon={!navbarResponsive ? <MenuOutlined /> : <CloseOutlined />}
           />
           <Button type="link">
             Inicio
@@ -40,8 +40,11 @@ export default function Navbar() {
           <Button type="link">
             Información Adicional
           </Button>
-          <Button type="primary">
+          <Button type="primary" size='large' className='btn-contacto' >
             Contacto
+          </Button>
+          <Button icon={<PhoneFilled />} type="default" size='large' className='btn-call' >
+            Llamar
           </Button>
         </div>
       </div>

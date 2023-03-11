@@ -3,12 +3,13 @@ import styled from "styled-components";
 const Navbar = styled.div`
   overflow: hidden;
   padding: 10px 0px;
-  /* background-color: #333; */
+
   .navbar-container {
     display: flex;
     flex-direction: row;
     width: 100%;
     justify-content: space-between;
+    align-items: center;
   }
 
   .logo {
@@ -33,8 +34,20 @@ const Navbar = styled.div`
   .icon {
     display: none;
   }
+
+  .btn-call {
+    display: none;
+  }
   
   @media screen and (max-width: 600px) {
+    padding: 10px 10px;
+
+    .logo {
+      margin: 16px;
+      img {
+        width: 100%;
+      }
+    }
     .navigation {
       justify-content: flex-end;
     }
@@ -42,31 +55,54 @@ const Navbar = styled.div`
       display: none;
     }
     button.icon {
-      float: left;
       display: block;
+      border: none;
     }
   }
   
   @media screen and (max-width: 600px) {
+    
     .responsive {
-      flex-direction: column;
-      background-color: ${props => props.colorPrimary ? props.colorPrimary : "white"};
-      color: white;
-    }
-    .responsive > .navigation {
-      flex-direction: column;
-      width: 100%;
-      align-items: flex-start;
-      justify-content: center;
-    }
-    .responsive > .navigation > button {
-      display: block;
-      color: white;
-    }
-    button.icon {
       position: absolute;
-      top: 16px;
-      right: 15px;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: 10;
+      background-color: white;
+      flex-direction: column;
+      align-items: flex-start;  
+      justify-content: flex-start;
+
+      .navigation {
+        flex-direction: column;
+        width: 100%;
+        align-items: flex-start;
+        justify-content: center;
+
+        .btn-contacto {
+         margin-left: 16px;
+         width: 120px;
+        }
+        
+        .btn-call {
+          margin-left: 16px;
+          background-color: #000;
+          color: #fff;
+          width: 120px;
+        }
+      }
+      
+      .navigation > button {
+        display: block;
+        margin: 10px 0px;
+      }
+
+      button.icon {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+      }
     }
   }
 `;

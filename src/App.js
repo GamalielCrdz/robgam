@@ -12,6 +12,7 @@ function App() {
           colorBgContainer: '#ffffff',
           colorLink: '#000',
           colorLinkHover: '#e5352b',
+          borderRadius: '2px',
         },
       }}
     >
