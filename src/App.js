@@ -1,5 +1,6 @@
 import 'antd/dist/reset.css';
 import './App.css';
+import "animate.css/animate.min.css";
 import Main from './app/index.jsx';
 import { ConfigProvider } from 'antd';
 

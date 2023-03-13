@@ -1,21 +1,163 @@
-import React, { useRef } from 'react'
+import React from 'react'
 import HomeStyled from './Home.styled'
-import { CSSTransition } from 'react-transition-group';
+import imgSobre from '../../assets/images/img-sobre.png';
+import imgTarget from '../../assets/icons/target.svg';
+import imgVision from '../../assets/icons/vision.svg';
+import imgPallets from '../../assets/icons/icon-pallets.svg';
+import imgProd from '../../assets/images/img-prod.png';
+import imgConoce from '../../assets/images/img-conoce.png';
+import { AnimationOnScroll } from 'react-animation-on-scroll';
+import { Button, theme } from "antd";
 
 export default function Home() {
-  const nodeRef = useRef(null);
+  const { token: { colorPrimary } } = theme.useToken();
+
 
   return (
-    <HomeStyled>
-      <div className='somos' >
-        <div className='home-text'>
-          Somos ROBGAM,
-          Somos tu mejor
-          opción en tarimas
-          multiusos para todo
-          tipo de industria.
+    <HomeStyled colorPrimary={colorPrimary} >
+
+      <div className='seccion somos' >
+        <AnimationOnScroll initiallyVisible animatePreScroll={true} animateIn="animate__fadeInUp" >
+          <div className='home-text'>
+            Somos ROBGAM,
+            Somos tu mejor
+            opción en tarimas
+            multiusos para todo
+            tipo de industria.
+          </div>
+        </AnimationOnScroll>
+      </div>
+
+      <div className="seccion sobre">
+        <div className="up-side">
+          <div className="sobre-side">
+            <img src={imgSobre} className='robgam' alt="sobre" />
+          </div>
+          <div className="sobre-side texto">
+            <AnimationOnScroll animateIn="animate__fadeInUp" >
+              <div className="parrafo ">
+                <h1>Sobre Robgam</h1>
+                <p>
+                  Robgam Pallets es una empresa: Autodidacta, visionaria y apasionada; coloca a las personas en el centro de cada proyecto. Ha basado sistemáticamente su desarrollo enfatizando la interdependencia de los objetivos sociales, económicos y ambientales
+                </p>
+              </div>
+              <div className="parrafo ">
+                <div className="img-container">
+                  <img src={imgTarget} alt="target" />
+                </div>
+                <h2>Misión</h2>
+                <p>
+                  Resolver problemas para el transporte de productos, agilizando la logística de la industria. Todo ello con un enfoque de innovación y optimización de los recursos.
+                </p>
+              </div>
+              <div className="parrafo">
+                <div className="img-container">
+                  <img src={imgVision} alt="vision" />
+                </div>
+                <h2>Visión</h2>
+                <p>
+                  Desarrollar información logística para optimizar espacios y procesos a la industria
+                </p>
+              </div>
+            </AnimationOnScroll>
+          </div>
         </div>
       </div>
+
+      <div className="seccion frase">
+        <div className="down-side">
+          <AnimationOnScroll animateIn="animate__fadeInUp" >
+            <div>
+              <h1>
+                "En ROBGAM Pallets solo hay un jefe. <p>El cliente"</p>
+              </h1>
+              <p className='cita' >-Roberto Gamboa / Fundador CEO</p>
+            </div>
+          </AnimationOnScroll>
+
+        </div>
+      </div>
+
+      <div className="seccion productos">
+        <div className="products-side" >
+
+          <AnimationOnScroll animateIn="animate__fadeInUp" >
+            <h1>Nuestros Productos:</h1>
+          </AnimationOnScroll>
+
+          <AnimationOnScroll className='producto' animateIn="animate__fadeInUp" >
+            <div className='producto-img'>
+              <img src={imgPallets} alt='prod-1' />
+            </div>
+            <div className='producto-desc'>
+              <h2>
+                Tarimas 2 entradas
+              </h2>
+            </div>
+          </AnimationOnScroll>
+
+          <AnimationOnScroll className='producto' animateIn="animate__fadeInUp" >
+            <div className='producto-img'>
+              <img src={imgPallets} alt='prod-1' />
+            </div>
+            <div className='producto-desc'>
+              <h2>
+                Tarimas 4 entradas
+              </h2>
+            </div>
+          </AnimationOnScroll>
+
+          <AnimationOnScroll className='producto' animateIn="animate__fadeInUp" >
+            <div className='producto-img'>
+              <img src={imgPallets} alt='prod-1' />
+            </div>
+            <div className='producto-desc'>
+              <h2>
+                Tarima Stringer sin Saque
+              </h2>
+            </div>
+          </AnimationOnScroll>
+
+          <AnimationOnScroll className='producto' animateIn="animate__fadeInUp" >
+            <div className='producto-img'>
+              <img src={imgPallets} alt='prod-1' />
+            </div>
+            <div className='producto-desc'>
+              <h2>
+                Tarimas recicladas
+              </h2>
+            </div>
+          </AnimationOnScroll>
+
+          <AnimationOnScroll className='producto' animateIn="animate__fadeInUp" >
+            <div className='producto-img'>
+              <img src={imgPallets} alt='prod-1' />
+            </div>
+            <div className='producto-desc'>
+              <h2>
+                Tarimas con especificasiones especiales
+              </h2>
+            </div>
+          </AnimationOnScroll>
+        </div>
+
+        <div className="image-side" >
+          <img src={imgProd} alt='prod' />
+        </div>
+      </div>
+
+      <div className="seccion conoce">
+        <div className="image side">
+          <img src={imgConoce} alt="conoce" />
+        </div>
+        <div className="text side">
+          <AnimationOnScroll animateIn="animate__fadeInUp" >
+            <h1>Conoce más sobre nosotros y también del porqué somos una empresa de confianza</h1>
+            <Button type='primary' size='large' >Conoce más</Button>
+          </AnimationOnScroll>
+        </div>
+      </div>
+
     </HomeStyled>
   )
 }

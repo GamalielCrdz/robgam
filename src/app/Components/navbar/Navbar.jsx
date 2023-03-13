@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import NavbarStyled from './Navbar.styled'
 import { Button, theme } from 'antd'
 import { MenuOutlined, PhoneFilled, CloseOutlined } from '@ant-design/icons';
-import logo from '../../assets/images/logo-robgam.svg' // relative path to image 
+import logo from '../../assets/images/logo-robgam.svg';
 
 export default function Navbar() {
   const [navbarResponsive, setNavbarResponsive] = useState(false);

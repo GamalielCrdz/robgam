@@ -12,16 +12,6 @@ code {
     monospace;
 }
 
-@keyframes fade-text {
-  0% {
-    transform: translateY(100%);
-    opacity: 0;
-  }
-  50%  {
-    opacity: 0.5;
-  }
-  100% {
-    transform: translateY(0%);
-    opacity: 1;
-  }
+h1 {
+  font-size: 48px;
 }

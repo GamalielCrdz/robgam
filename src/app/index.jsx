@@ -1,15 +1,14 @@
+import React from "react";
 import { Layout, theme } from "antd";
 import Navbar from './Components/navbar/Navbar';
 import Home from './Views/Home/Home';
+import Productos from './Views/Productos/Productos';
 import LayoutStyled from './index.styled'
 
 const { Header, Content, Footer } = Layout;
 
 const App = () => {
-  const {
-    token: { colorBgContainer },
-  } = theme.useToken();
-
+  const { token: { colorBgContainer } } = theme.useToken();
 
   return (
     <LayoutStyled>
@@ -24,7 +23,7 @@ const App = () => {
           style={{
             background: colorBgContainer,
           }} >
-          <Home />
+          <Productos />
         </Content>
 
         <Footer>
