@@ -3,6 +3,7 @@ import { Layout, theme } from "antd";
 import Navbar from './Components/navbar/Navbar';
 import Home from './Views/Home/Home';
 import Productos from './Views/Productos/Productos';
+import Nuestro from './Views/Nuestro/Nuestro';
 import LayoutStyled from './index.styled'
 
 const { Header, Content, Footer } = Layout;
@@ -23,7 +24,7 @@ const App = () => {
           style={{
             background: colorBgContainer,
           }} >
-          <Productos />
+          <Nuestro />
         </Content>
 
         <Footer>
