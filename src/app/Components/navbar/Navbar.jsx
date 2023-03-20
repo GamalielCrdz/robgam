@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import NavbarStyled from './Navbar.styled'
 import { Button, theme } from 'antd'
 import { MenuOutlined, PhoneFilled, CloseOutlined } from '@ant-design/icons';
+import { Link } from "react-router-dom";
 import logo from '../../assets/images/logo-robgam.svg';
 
 export default function Navbar() {
@@ -29,19 +30,19 @@ export default function Navbar() {
             icon={!navbarResponsive ? <MenuOutlined /> : <CloseOutlined />}
           />
           <Button type="link">
-            Inicio
+            <Link to='/'>Inicio</Link>
           </Button>
           <Button type="link">
-            Nuestros Productos
+            <Link to={`/Productos`}>Nuestros Productos</Link>
           </Button>
           <Button type="link">
-            Nuestros Servicios
+            <Link to={`/Servicios`}>Nuestros Servicios</Link>
           </Button>
           <Button type="link">
-            Información Adicional
+            <Link to={`/Informacion`}>Información Adicional</Link>
           </Button>
           <Button type="primary" size='large' className='btn-contacto' >
-            Contacto
+            <Link to={`/Contacto`}>Contacto</Link>
           </Button>
           <Button icon={<PhoneFilled />} type="default" size='large' className='btn-call' >
             Llamar
