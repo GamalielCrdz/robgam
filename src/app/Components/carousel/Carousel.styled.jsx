@@ -43,6 +43,33 @@ const Carousel = styled.div`
       }
     }
   }
+
+  @media screen and (max-width: 600px) {
+    .item-container {
+      flex-direction: column;
+      margin: 20px;
+
+      .item {
+        width: 360px;
+        height: 220px;
+        padding: 20px;
+        margin: 5px;
+        border-radius: 16px;
+        display: flex;
+        flex-direction: column;
+        background-color: #fff;
+        justify-content: space-evenly;
+
+        .item-footer {
+          border-top: 1px solid #000;
+        }
+      }
+    }
+
+    .slick-dots-bottom {
+      bottom: 0px;
+    }
+  }
 `;
 
 export default Carousel;
