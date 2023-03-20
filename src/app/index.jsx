@@ -60,7 +60,8 @@ const App = () => {
             size="large"
             shape="circle"
             alt="whatsapp"
-            icon={<img src={whatsapp} alt="whatsapp" width={30} />}
+            href="https://api.whatsapp.com/send?phone=528113060168"
+            icon={<img src={whatsapp} alt="whatsapp" width={50} />}
           />
         </Content>
 
