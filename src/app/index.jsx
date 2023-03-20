@@ -1,10 +1,12 @@
 import React from "react";
 import { Layout, theme } from "antd";
 import Navbar from './Components/navbar/Navbar';
+import FooterR from './Components/footer/Footer';
 import Home from './Views/Home/Home';
 import Productos from './Views/Productos/Productos';
 import Nuestro from './Views/Nuestro/Nuestro';
 import Adicional from './Views/Adicional/Adicional';
+import Informacion from './Views/Informacion/Informacion';
 import LayoutStyled from './index.styled'
 
 const { Header, Content, Footer } = Layout;
@@ -25,11 +27,11 @@ const App = () => {
           style={{
             background: colorBgContainer,
           }} >
-          <Adicional />
+          <Informacion />
         </Content>
 
-        <Footer>
-          Ant Design ©2023 Created by Ant UED
+        <Footer background='#000' >
+          <FooterR/>
         </Footer>
       </Layout>
     </LayoutStyled>

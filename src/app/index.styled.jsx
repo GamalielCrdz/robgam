@@ -6,6 +6,11 @@ const Layout = styled.div`
     background-color: ${props => props.background ? props.background : "white"};
   }
 
+  .ant-layout-footer {
+    background: #000;
+    color: #fff;
+  }
+
   @media screen and (max-width: 600px) {
     .header {
       padding-inline: 0px;
