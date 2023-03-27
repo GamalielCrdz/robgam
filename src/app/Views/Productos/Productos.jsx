@@ -25,7 +25,7 @@ export default function Home() {
             </AnimationOnScroll>
           </div>
           <div className='image-container' >
-            <img src={imgHeader} alt="produc-header" />
+            <img src={imgHeader} alt="produc-header" height={239} />
           </div>
         </div>
         <div className='seccion-row' >

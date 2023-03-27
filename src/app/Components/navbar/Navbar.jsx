@@ -19,7 +19,9 @@ export default function Navbar() {
     <NavbarStyled colorPrimary={colorPrimary} className="topnav">
       <div className={`navbar-container ${navbarResponsive ? 'responsive' : ''}`}>
         <div className="logo">
-          <img src={logo} alt="logo-navbar" />
+          <Link to='/'>
+            <img src={logo} alt="logo-navbar" />
+          </Link>
         </div>
 
         <div className="navigation">

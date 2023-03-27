@@ -88,10 +88,15 @@ export default function Home() {
 
         <div className="seccion-row form">
           <h2>¿Cómo te podemos ayudar?</h2>
-          <Input placeholder="Email" />
+          <Button
+            type="primary"
+            href='mailto:ventas@robgam.com.mx'
+            size='large' >
+            Haz click para enviarnos un email
+          </Button>
+          {/* <Input placeholder="Email" />
           <Input placeholder="Subject" />
-          <TextArea rows={4} placeholder="¿Cómo podemos ayudarte?" />
-          <Button type="primary">Enviar</Button>
+          <TextArea rows={4} placeholder="¿Cómo podemos ayudarte?" /> */}
         </div>
       </div>
 

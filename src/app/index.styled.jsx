@@ -1,7 +1,12 @@
 import styled from "styled-components";
 
 const Layout = styled.div`
+  display: flex;
+  justify-content: center;
+    background-color: #fff;
+
   .header {
+    padding-inline: 80px;
     height: auto;
     background-color: ${(props) =>
       props.background ? props.background : "white"};
@@ -10,6 +15,11 @@ const Layout = styled.div`
   .ant-layout-footer {
     background: #000;
     color: #fff;
+    padding-inline: 80px;
+  }
+
+  .layout {
+    max-width: 1366px;
   }
 
   .whatsapp {

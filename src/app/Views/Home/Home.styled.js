@@ -14,8 +14,9 @@ const Home = styled.div`
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: flex-start;
-    height: 100vh;
+    justify-content: space-between;
+    padding-inline: 80px;
+    padding-block: 40px;
 
     &.somos {
       width: 100%;
@@ -34,7 +35,6 @@ const Home = styled.div`
         opacity: 1;
         max-width: 550px;
         text-align: start;
-        margin-left: 90px;
       }
     }
 
@@ -45,7 +45,7 @@ const Home = styled.div`
         display: flex;
         flex-direction: row;
         align-items: center;
-        justify-content: space-around;
+        justify-content: space-between;
 
         .sobre-side {
           width: 45%;
@@ -94,6 +94,7 @@ const Home = styled.div`
     }
 
     &.frase {
+      background: #000;
       .down-side {
         width: 100%;
         height: 100%;
@@ -127,7 +128,6 @@ const Home = styled.div`
         flex-direction: column;
         align-items: flex-start;
         justify-content: space-evenly;
-        padding: 20px;
 
         h1 {
           font-size: 48px;
@@ -175,6 +175,7 @@ const Home = styled.div`
         justify-content: center;
 
         &.text {
+          width: 40%;
           div {
             display: flex;
             flex-direction: column;
@@ -193,6 +194,15 @@ const Home = styled.div`
   @media screen and (max-width: 600px) {
     .seccion {
       flex-direction: column;
+
+      &.somos {
+        justify-content: center;
+
+        .home-text {
+          margin-left: 15px;
+          font-size: 40px;  
+        }
+      }
 
       &.sobre {
         .up-side {

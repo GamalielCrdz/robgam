@@ -46,7 +46,7 @@ const Home = styled.div`
       &.form {
         flex-direction: column;
         align-items: flex-start;
-        justify-content: space-around;
+        justify-content: flex-start;
         height: 350px;
 
         input, textarea  {
