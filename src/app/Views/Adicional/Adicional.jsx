@@ -1,5 +1,5 @@
 import React from 'react'
-import HomeStyled from './Adicional.styled';
+import AdicionalStyled from './Adicional.styled';
 import imgHeader from '../../assets/images/img-inf.adicional-header.png';
 import imgProductosEconomia from '../../assets/images/img-inf.adicional-economia.png';
 import imgProductosScrap from '../../assets/images/img-servicios-scrap.png';
@@ -9,12 +9,12 @@ import { Collapse, Space, theme } from "antd";
 import Carousel from '../../Components/carousel/Carousel';
 const { Panel } = Collapse;
 
-export default function Home() {
+export default function Adicional() {
   const { token: { colorPrimary } } = theme.useToken();
 
 
   return (
-    <HomeStyled colorPrimary={colorPrimary} >
+    <AdicionalStyled colorPrimary={colorPrimary} >
 
       <div className='seccion seccion-column nuestro'>
         <div className='seccion-row img-header'>
@@ -147,6 +147,6 @@ export default function Home() {
         </div>
       </div>
 
-    </HomeStyled>
+    </AdicionalStyled>
   )
 }

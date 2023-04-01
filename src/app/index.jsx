@@ -47,7 +47,7 @@ const App = () => {
           <Navbar />
         </Header>
 
-        <Content style={{ background: colorBgContainer }} >
+        <Content style={{ background: colorBgContainer, position: 'relative' }} >
           <Routes>
             {
               router.map(ruta => (

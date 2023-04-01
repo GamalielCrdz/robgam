@@ -268,8 +268,9 @@ const Home = styled.div`
           }
         }
 
-        > div {
+        div {
           width: 100% !important;
+          max-width: 600px;
         }
 
         .image-container {

@@ -20,7 +20,7 @@ const Navbar = styled.div`
   }
 
   .navigation {
-    width: 60%;
+    width: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -40,10 +40,9 @@ const Navbar = styled.div`
   }
   
   @media screen and (max-width: 600px) {
-    padding: 10px 10px;
+    padding: 20px;
 
     .logo {
-      margin: 16px;
       img {
         width: 100%;
       }

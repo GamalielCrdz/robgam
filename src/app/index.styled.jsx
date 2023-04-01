@@ -39,6 +39,10 @@ const Layout = styled.div`
     .header {
       padding-inline: 0px;
     }
+
+    .ant-layout-footer {
+      padding-inline: 20px;
+    }
   }
 `;
 

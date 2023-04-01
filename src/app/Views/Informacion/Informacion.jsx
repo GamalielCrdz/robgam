@@ -6,7 +6,7 @@ import { theme, Card, Input, Button } from "antd";
 
 const { TextArea } = Input;
 
-export default function Home() {
+export default function Informacion() {
   const { token: { colorPrimary } } = theme.useToken();
 
 

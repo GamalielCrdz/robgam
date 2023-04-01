@@ -47,6 +47,11 @@ const Footer = styled.div`
       align-items: flex-start;
     }
 
+    .footer-credits {
+      display: flex;
+      justify-content: center;
+    }
+
     .item {
       margin: 5px 0px 7px 0px;
     }

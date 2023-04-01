@@ -279,9 +279,6 @@ const Home = styled.div`
           }
         }
 
-        > div {
-          width: 100% !important;
-        }
 
         .image-container {
           background-color: white;

@@ -7,7 +7,7 @@ import imgProductosElegir from '../../assets/images/img-productos-elegir.png';
 import { AnimationOnScroll } from 'react-animation-on-scroll';
 import { Button, theme } from "antd";
 
-export default function Home() {
+export default function Productos() {
   const { token: { colorPrimary } } = theme.useToken();
 
 

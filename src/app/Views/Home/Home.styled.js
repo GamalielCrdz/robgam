@@ -194,12 +194,13 @@ const Home = styled.div`
   @media screen and (max-width: 600px) {
     .seccion {
       flex-direction: column;
+      padding-inline: 20px;
+
 
       &.somos {
         justify-content: center;
 
         .home-text {
-          margin-left: 15px;
           font-size: 40px;  
         }
       }
@@ -210,11 +211,9 @@ const Home = styled.div`
 
           .sobre-side {
             width: 100%;
-            padding: 0px 15px;
 
             .robgam {
               height: 270px;
-              padding-bottom: 20px;
             }
           }
         }
@@ -228,9 +227,8 @@ const Home = styled.div`
         }
 
         .image-side {
-          padding: 20px;
           width: 100%;
-          max-height: 250px;
+          /* max-height: 250px; */
         }
       }
 
@@ -239,9 +237,11 @@ const Home = styled.div`
 
         .side {
           width: 100%;
-          padding: 15px;
+          padding-bottom: 15px;
 
           &.text {
+            width: 100%;
+
             div {
               display: flex;
               flex-direction: column;

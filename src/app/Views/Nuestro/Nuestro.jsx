@@ -13,7 +13,7 @@ import imgProductosScrap from '../../assets/images/img-servicios-scrap.png';
 import { AnimationOnScroll } from 'react-animation-on-scroll';
 import { Button, theme } from "antd";
 
-export default function Home() {
+export default function Nuestro() {
   const { token: { colorPrimary } } = theme.useToken();
 
 
