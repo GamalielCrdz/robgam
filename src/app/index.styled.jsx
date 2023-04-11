@@ -3,13 +3,12 @@ import styled from "styled-components";
 const Layout = styled.div`
   display: flex;
   justify-content: center;
-    background-color: #fff;
+  background-color: #fff;
 
   .header {
     padding-inline: 80px;
     height: auto;
-    background-color: ${(props) =>
-      props.background ? props.background : "white"};
+    background-color: ${(props) => props.background ? props.background : "white"};
   }
 
   .ant-layout-footer {
@@ -35,6 +34,13 @@ const Layout = styled.div`
     -o-transform: rotate(360deg);
   }
 
+  h1 {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 67px;
+    letter-spacing: 0em;
+  }
+
   @media screen and (max-width: 600px) {
     .header {
       padding-inline: 0px;
@@ -42,6 +48,13 @@ const Layout = styled.div`
 
     .ant-layout-footer {
       padding-inline: 20px;
+    }
+
+    h1 {
+      font-size: 32px;
+      font-weight: 700;
+      line-height: 38px;
+      letter-spacing: 0em;
     }
   }
 `;

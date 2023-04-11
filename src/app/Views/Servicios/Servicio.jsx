@@ -1,5 +1,5 @@
 import React from 'react'
-import HomeStyled from './Nuestro.styled';
+import HomeStyled from './Servicio.styled';
 import imgHeader from '../../assets/images/img-servicios-header.png';
 import imgProductosReparacion from '../../assets/images/img-servicios-reparacion.png';
 
@@ -44,7 +44,7 @@ export default function Nuestro() {
           </div>
         </div>
       </div>
-
+      
       <div className='seccion seccion-column productos'>
         <div className='seccion-row img-header productos'>
           <div className='image-container' >
@@ -140,7 +140,7 @@ export default function Nuestro() {
           </div>
         </div>
       </div>
-
+ 
     </HomeStyled>
   )
 }

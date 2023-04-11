@@ -247,6 +247,19 @@ const Home = styled.div`
     .seccion {
       flex-direction: column;
 
+      .sobre-side {
+        &.texto {
+          width: 100%;
+        }
+      }
+
+      &.productos {
+
+        .image-container {
+          width: 100%;
+        }
+      }
+
       .seccion-row {
         width: 100%;
         display: flex;
@@ -298,6 +311,7 @@ const Home = styled.div`
       .text {
         margin: 0px;
         padding: 20px;
+        width: 100%;
       }
     }
   }

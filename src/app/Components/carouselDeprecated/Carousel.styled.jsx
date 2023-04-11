@@ -18,7 +18,6 @@ const Carousel = styled.div`
       flex-direction: column;
       background-color: #fff;
       justify-content: space-evenly;
-      color: #000;
 
       .item-footer {
         border-top: 1px solid #000;
@@ -47,15 +46,14 @@ const Carousel = styled.div`
 
   @media screen and (max-width: 600px) {
     .item-container {
-      // flex-direction: column;
-      margin: 0px;
-      width: 100%;
-      // max-width: 300px;
+      flex-direction: column;
+      margin: 20px;
 
       .item {
-        width: 60%;
+        width: 360px;
         height: 220px;
-        padding: 0px;
+        padding: 20px;
+        margin: 5px;
         border-radius: 16px;
         display: flex;
         flex-direction: column;

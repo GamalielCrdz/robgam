@@ -7,6 +7,7 @@ const Home = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  text-align: start;
 
   .seccion {
     width: 100%;
@@ -116,12 +117,6 @@ const Home = styled.div`
         .parrafo {
           h1 {
             color: #000000;
-            font-size: 48px;
-            font-size: 48px;
-            font-weight: 600;
-            line-height: 58px;
-            letter-spacing: 0em;
-            text-align: left;
           }
 
           p {
@@ -173,14 +168,13 @@ const Home = styled.div`
         font-size: 16px;
         line-height: 26px;
         color: #5b5b5b;
-        text-align: start;
       }
     }
 
     .sobre-side {
       width: 45%;
       background: #000;
-      padding: 0px 20px;
+      /* padding: 0px 20px; */
 
       img {
         max-width: 100%;
@@ -196,12 +190,12 @@ const Home = styled.div`
       }
 
       .parrafo {
-        text-align: start;
+        
         margin-bottom: 40px;
 
-        h1 {
+        /* h1 {
           font-size: 48px;
-        }
+        } */
 
         p {
           line-height: 25.9px;
@@ -233,6 +227,11 @@ const Home = styled.div`
   @media screen and (max-width: 600px) {
     .seccion {
       flex-direction: column;
+      text-align: center!important;
+      
+      .servicios-container {
+        margin: 10px!important;
+      }
 
       .seccion-row {
         width: 100%;

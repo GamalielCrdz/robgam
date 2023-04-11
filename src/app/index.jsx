@@ -4,7 +4,7 @@ import Navbar from './Components/navbar/Navbar';
 import FooterR from './Components/footer/Footer';
 import Home from './Views/Home/Home';
 import Productos from './Views/Productos/Productos';
-import Nuestro from './Views/Nuestro/Nuestro';
+import Servicio from './Views/Servicios/Servicio';
 import Adicional from './Views/Adicional/Adicional';
 import Informacion from './Views/Informacion/Informacion';
 import LayoutStyled from './index.styled'
@@ -26,7 +26,7 @@ const App = () => {
     },
     {
       path: "Servicios",
-      element: <Nuestro />,
+      element: <Servicio />,
     },
     {
       path: "Informacion",
