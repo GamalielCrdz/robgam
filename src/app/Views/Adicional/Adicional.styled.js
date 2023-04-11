@@ -247,6 +247,12 @@ const Home = styled.div`
     .seccion {
       flex-direction: column;
 
+      &.nuestro {
+        .image-container {
+          width: 100%;
+        }
+      }
+
       .testimonios {
         padding-bottom: 25px;
       }
