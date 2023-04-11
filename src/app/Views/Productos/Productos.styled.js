@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import imgSomos from "../../assets/images/img-header.png";
 
 const Home = styled.div`
   width: 100%;
@@ -8,6 +7,7 @@ const Home = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  text-align: start;
 
   .seccion {
     width: 100%;
@@ -36,8 +36,7 @@ const Home = styled.div`
     }
 
     .img-header {
-      background: ${(props) =>
-        props.colorPrimary ? props.colorPrimary : "white"};
+      background: ${(props) => props.colorPrimary ? props.colorPrimary : "white"};
       color: white;
       justify-content: space-between;
 
@@ -56,11 +55,6 @@ const Home = styled.div`
         .parrafo {
           h1 {
             color: #000000;
-            font-size: 48px;
-            font-size: 48px;
-            font-weight: 600;
-            line-height: 58px;
-            letter-spacing: 0em;
             text-align: left;
           }
 
@@ -68,8 +62,7 @@ const Home = styled.div`
             color: #6e6e86;
           }
           .img-container {
-            background: ${(props) =>
-              props.colorPrimary ? props.colorPrimary : "white"};
+            background: ${(props) => props.colorPrimary ? props.colorPrimary : "white"};
           }
         }
 
@@ -107,12 +100,15 @@ const Home = styled.div`
       width: 40%;
       margin: 80px;
 
+      .main-text {
+        text-align: start;
+      }
+
       p {
         font-weight: 400;
         font-size: 16px;
         line-height: 26px;
         color: #5b5b5b;
-        text-align: start;
       }
     }
 
@@ -134,12 +130,12 @@ const Home = styled.div`
       }
 
       .parrafo {
-        text-align: start;
+        /* text-align: start; */
         margin-bottom: 40px;
 
-        h1 {
+        /* h1 {
           font-size: 48px;
-        }
+        } */
 
         p {
           line-height: 25.9px;
@@ -167,6 +163,28 @@ const Home = styled.div`
   @media screen and (max-width: 600px) {
     .seccion {
       flex-direction: column;
+      text-align: center;
+      
+      .productos {
+        .parrafo {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .image-container {
+          padding: 20px;
+          background-color: #000!important;
+        }
+      }
+
+      .elegir {
+        .parrafo {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+      }
 
       .seccion-row {
         width: 100%;

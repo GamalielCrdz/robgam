@@ -22,7 +22,7 @@ export default function CarouselComponent() {
               </div>
             </div>
           </div>
-{/*           <div className="item">
+          <div className="item">
             <div className="item-text">
               “Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna”
             </div>
@@ -47,7 +47,7 @@ export default function CarouselComponent() {
                 Company
               </div>
             </div>
-          </div> */}
+          </div>
         </div>
       </Carousel>
     </CarouselStyled>

@@ -47,13 +47,15 @@ const Carousel = styled.div`
 
   @media screen and (max-width: 600px) {
     .item-container {
-      // flex-direction: column;
       margin: 0px;
       width: 100%;
-      // max-width: 300px;
 
       .item {
-        width: 60%;
+        :not(:first-child) {
+          display: none;
+        }
+
+        width: 95%;
         height: 220px;
         padding: 0px;
         border-radius: 16px;

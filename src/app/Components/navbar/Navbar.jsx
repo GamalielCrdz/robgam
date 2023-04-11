@@ -31,22 +31,22 @@ export default function Navbar() {
             className="icon"
             icon={!navbarResponsive ? <MenuOutlined /> : <CloseOutlined />}
           />
-          <Button type="link">
+          <Button onClick={onClick} type="link">
             <Link to='/'>Inicio</Link>
           </Button>
-          <Button type="link">
+          <Button onClick={onClick} type="link">
             <Link to={`/Productos`}>Nuestros Productos</Link>
           </Button>
-          <Button type="link">
+          <Button onClick={onClick} type="link">
             <Link to={`/Servicios`}>Nuestros Servicios</Link>
           </Button>
-          <Button type="link">
+          <Button onClick={onClick} type="link">
             <Link to={`/Informacion`}>Información Adicional</Link>
           </Button>
-          <Button type="primary" size='large' className='btn-contacto' >
+          <Button onClick={onClick} type="primary" size='large' className='btn-contacto' >
             <Link to={`/Contacto`}>Contacto</Link>
           </Button>
-          <Button icon={<PhoneFilled />} type="default" size='large' className='btn-call' >
+          <Button onClick={onClick} icon={<PhoneFilled />} type="default" size='large' className='btn-call' >
             Llamar
           </Button>
         </div>

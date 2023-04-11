@@ -39,16 +39,22 @@ const Home = styled.div`
           display: flex;
           justify-content: center;
           align-items: center;
+          justify-content: space-between;
+          width: 100%;
 
           .picture {
             padding: 0px 2px;
+            width: 250px;
+
+            img {
+              width: 100%;
+            }
 
             .picture-title {
               &.black {
                 background-color: #000;
               }
-              background-color: ${(props) =>
-                props.colorPrimary ? props.colorPrimary : "white"};
+              background-color: ${(props) => props.colorPrimary ? props.colorPrimary : "white"};
               width: 100%;
               height: 38px;
               font-size: 32px;

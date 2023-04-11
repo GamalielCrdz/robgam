@@ -31,7 +31,7 @@ export default function Productos() {
         <div className='seccion-row' >
           <div className='text'>
             <AnimationOnScroll animateIn="animate__fadeInUp" >
-              <p>
+              <p className='main-text' >
                 Las pallets de madera estandarizadas o hechas a medida, nuevas o reacondicionadas ofrecen una multitud de respuestas,combinan parámetros económicos y ecológicos. Son fácilmente reparables y recuperables al final de su vida útil; ofrecen una imagen de naturalidad y autenticidad en perfecta armonía con la sociedad actual, apegada a consideraciones medioambientales. Los pallets de madera son ampliamente utilizados por fabricantes y distribuidores.
               </p>
             </AnimationOnScroll>
@@ -81,7 +81,7 @@ export default function Productos() {
         </div>
       </div>
 
-      <div className='seccion seccion-column'>
+      <div className='seccion seccion-column elegir'>
         <div className='seccion-row img-header elegir'>
 
           <div className="sobre-side texto">

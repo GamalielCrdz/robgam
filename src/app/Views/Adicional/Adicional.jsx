@@ -2,7 +2,6 @@ import React from 'react'
 import AdicionalStyled from './Adicional.styled';
 import imgHeader from '../../assets/images/img-inf.adicional-header.png';
 import imgProductosEconomia from '../../assets/images/img-inf.adicional-economia.png';
-import imgProductosScrap from '../../assets/images/img-servicios-scrap.png';
 
 import { AnimationOnScroll } from 'react-animation-on-scroll';
 import { Collapse, Space, theme } from "antd";

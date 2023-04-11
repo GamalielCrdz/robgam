@@ -247,6 +247,10 @@ const Home = styled.div`
     .seccion {
       flex-direction: column;
 
+      .testimonios {
+        padding-bottom: 25px;
+      }
+
       .sobre-side {
         &.texto {
           width: 100%;

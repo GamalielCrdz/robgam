@@ -73,20 +73,24 @@ export default function Nuestro() {
         <div className='seccion-row img-header elegir recolectamos'>
 
           <div className="sobre-side texto">
-            <AnimationOnScroll animateIn="animate__fadeInUp" >
 
               <div className="parrafo" >
+              <AnimationOnScroll animateIn="animate__fadeInUp" >
                 <h1>Recolectamos material no
                   <br />
                   tóxico como:
                 </h1>
+                </AnimationOnScroll>
               </div>
 
               <div className="parrafo" >
+                  <AnimationOnScroll animateIn="animate__fadeInUp" >
                 <p>
-                  Tenemos la infraestructura adecuada para recolectar los desechos industriales no tóxicos que nuestros clientes requieran.
-                  Somos una empresa socialmente responsable con el medio ambiente, por lo que buscamos que todos los desechos sean 100% reciclados y aprovechados de la mejor manera.
+                    Tenemos la infraestructura adecuada para recolectar los desechos industriales no tóxicos que nuestros clientes requieran.
+                    <br />
+                    Somos una empresa socialmente responsable con el medio ambiente, por lo que buscamos que todos los desechos sean 100% reciclados y aprovechados de la mejor manera.
                 </p>
+                  </AnimationOnScroll>
               </div>
 
               <div className='pictures-container' >
@@ -113,7 +117,7 @@ export default function Nuestro() {
 
               </div>
 
-            </AnimationOnScroll>
+            
           </div>
         </div>
       </div>

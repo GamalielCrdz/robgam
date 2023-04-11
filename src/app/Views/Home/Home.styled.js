@@ -8,6 +8,7 @@ const Home = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  text-align: start;
 
   .seccion {
     width: 100%;
@@ -34,7 +35,7 @@ const Home = styled.div`
         font-size: 55px;
         opacity: 1;
         max-width: 550px;
-        text-align: start;
+        /* text-align: start; */
       }
     }
 
@@ -63,11 +64,11 @@ const Home = styled.div`
           }
 
           .parrafo {
-            text-align: start;
+            /* text-align: start; */
 
-            h1 {
+            /* h1 {
               font-size: 48px;
-            }
+            } */
 
             p {
               line-height: 25.9px;
@@ -106,7 +107,7 @@ const Home = styled.div`
         color: #fff;
 
         h1 {
-          font-size: 48px;
+          text-align: center;
         }
 
         .cita {
@@ -129,10 +130,10 @@ const Home = styled.div`
         align-items: flex-start;
         justify-content: space-evenly;
 
-        h1 {
+        /* h1 {
           font-size: 48px;
         }
-
+ */
         .producto {
           min-width: 300px;
           min-height: 50px;
@@ -195,6 +196,7 @@ const Home = styled.div`
     .seccion {
       flex-direction: column;
       padding-inline: 20px;
+      text-align: center;
 
 
       &.somos {
@@ -216,6 +218,12 @@ const Home = styled.div`
               height: 270px;
             }
           }
+        }
+
+        .parrafo {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
         }
       }
 
