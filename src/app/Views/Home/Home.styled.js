@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import imgSomos from "../../assets/images/img-header.png";
+import imgProd from "../../assets/images/img-prod.png";
 
 const Home = styled.div`
   width: 100%;
@@ -15,15 +16,40 @@ const Home = styled.div`
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     padding-inline: 80px;
     padding-block: 40px;
+    position: relative;
+
+    .inner {
+      width: 100%;
+      max-width: 1280px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+
+      .side {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+
+        &.image-backgorund {
+          position: absolute;
+          left: 50%;
+          width: 50%;
+          top: 0px;
+          bottom: 0px;
+          background: url(${imgSomos});
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+      }
+    }
 
     &.somos {
-      width: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: flex-start;
       background: url(${imgSomos});
       height: calc(100vh - 102px);
       background-position: center;
@@ -35,62 +61,20 @@ const Home = styled.div`
         font-size: 55px;
         opacity: 1;
         max-width: 550px;
-        /* text-align: start; */
       }
     }
 
     &.sobre {
-      .up-side {
-        width: 100%;
-        background: #fff;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-
-        .sobre-side {
-          width: 45%;
-
-          img {
-            max-width: 100%;
-          }
-
-          &.texto {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            justify-content: space-between;
-            height: 100%;
-          }
-
-          .parrafo {
-            /* text-align: start; */
-
-            /* h1 {
-              font-size: 48px;
-            } */
-
-            p {
-              line-height: 25.9px;
-              color: #6e6e86;
-            }
-
-            .img-container {
-              background: #e5352b;
-              display: flex;
-              justify-content: center;
-              width: 40px;
-              height: 40px;
-              padding: 2px;
-              border-radius: 4px;
-              margin: 15px 0px;
-
-              img {
-                width: 30px;
-              }
-            }
-          }
+      .image {
+        align-items: flex-start;
+        .robgam {
+          max-width: 80%;
         }
+      }
+
+      .texto {
+        justify-content: space-between;
+        height: 100%;
       }
     }
 
@@ -118,22 +102,17 @@ const Home = styled.div`
     }
 
     &.productos {
-      background-color: ${(props) =>
-        props.colorPrimary ? props.colorPrimary : "white"};
+      background-color: ${(props) => props.colorPrimary ? props.colorPrimary : "white"};
       color: white;
 
-      .products-side {
+      .products-list {
         width: 50%;
-        height: 90%;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         justify-content: space-evenly;
+        padding-right: 90px;
 
-        /* h1 {
-          font-size: 48px;
-        }
- */
         .producto {
           min-width: 300px;
           min-height: 50px;
@@ -144,6 +123,7 @@ const Home = styled.div`
           align-items: center;
           width: 100%;
           padding: 5px;
+          margin-bottom: 30px;
         }
 
         .producto-desc {
@@ -155,14 +135,8 @@ const Home = styled.div`
         }
       }
 
-      .image-side {
-        width: 50%;
-        height: 100%;
-
-        img {
-          width: 100%;
-          height: 100%;
-        }
+      .image-backgorund {
+        background: url(${imgProd}) center center / cover no-repeat!important;
       }
     }
 
@@ -175,6 +149,12 @@ const Home = styled.div`
         align-items: center;
         justify-content: center;
 
+        &.image {
+          img {
+            width: 100%;
+          }
+        }
+
         &.text {
           width: 40%;
           div {
@@ -185,6 +165,7 @@ const Home = styled.div`
 
             h1 {
               text-align: left;
+              color: #000;
             }
           }
         }
@@ -198,26 +179,36 @@ const Home = styled.div`
       padding-inline: 20px;
       text-align: center;
 
+      .inner {
+        flex-direction: column-reverse;
+
+        .side {
+          width: 100%;
+
+          &.image-backgorund {
+            position: relative;
+            width: 300px;
+            height: 220px;
+            left: 0px;
+            top: 0px;
+            bottom: 0px;
+          }
+        }
+      }
 
       &.somos {
         justify-content: center;
 
         .home-text {
-          font-size: 40px;  
+          font-size: 40px;
         }
       }
 
       &.sobre {
-        .up-side {
-          flex-direction: column-reverse;
-
-          .sobre-side {
-            width: 100%;
-
-            .robgam {
-              height: 270px;
-            }
-          }
+        .image {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
         }
 
         .parrafo {
@@ -228,15 +219,13 @@ const Home = styled.div`
       }
 
       &.productos {
-        .products-side {
-          width: 100%;
-          height: 578px;
-          min-height: 578px;
+        .inner {
+          flex-direction: column;
         }
 
-        .image-side {
+        .products-list {
           width: 100%;
-          /* max-height: 250px; */
+          padding: 0px;
         }
       }
 

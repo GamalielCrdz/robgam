@@ -18,7 +18,7 @@ const Layout = styled.div`
   }
 
   .layout {
-    max-width: 1366px;
+    /* max-width: 1366px; */
   }
 
   .whatsapp {
@@ -34,11 +34,31 @@ const Layout = styled.div`
     -o-transform: rotate(360deg);
   }
 
+  .text {
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #6E6E86;
+  }
+
   h1 {
     font-size: 56px;
     font-weight: 700;
     line-height: 67px;
     letter-spacing: 0em;
+  }
+
+  .img-icon {
+    background-color: #E5352B;
+    width: 48px;
+    height: 48px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   @media screen and (max-width: 600px) {

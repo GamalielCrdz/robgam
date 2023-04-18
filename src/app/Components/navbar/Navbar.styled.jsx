@@ -3,6 +3,9 @@ import styled from "styled-components";
 const Navbar = styled.div`
   overflow: hidden;
   padding: 10px 0px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
 
   .navbar-container {
     display: flex;
@@ -10,6 +13,7 @@ const Navbar = styled.div`
     width: 100%;
     justify-content: space-between;
     align-items: center;
+    max-width: 1280px;
   }
 
   .logo {
