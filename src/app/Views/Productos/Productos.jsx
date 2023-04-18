@@ -5,7 +5,7 @@ import imgPallets from '../../assets/icons/icon-pallets.svg';
 import imgProductosPallets from '../../assets/images/img-productos-pallets.png';
 import imgProductosElegir from '../../assets/images/img-productos-elegir.png';
 import { AnimationOnScroll } from 'react-animation-on-scroll';
-import { Button, theme } from "antd";
+import { theme } from "antd";
 
 export default function Productos() {
   const { token: { colorPrimary } } = theme.useToken();

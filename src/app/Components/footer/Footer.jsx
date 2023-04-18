@@ -1,6 +1,7 @@
-import React, { useState } from 'react'
+import React from 'react'
 import FooterStyled from './Footer.styled'
 import { theme } from 'antd'
+import { Link } from "react-router-dom";
 import logo from '../../assets/images/logo-robgam-footer.svg';
 
 export default function Navbar() {
@@ -18,10 +19,10 @@ export default function Navbar() {
           <p className="menu-title">
             Menu:
           </p>
-          <p><a href="">Nuestros productos</a></p>
-          <p><a href="">Servicios</a></p>
-          <p><a href="">Información adicional</a></p>
-          <p><a href="">Contacto</a></p>
+          <p><Link to={`/Productos`}>Nuestros productos</Link></p>
+          <p><Link to={`/Servicios`}>Servicios</Link></p>
+          <p><Link to={`/Informacion`}>Información adicional</Link></p>
+          <p><Link to={`/Contacto`}>Contacto</Link></p>
         </div>
         <div className="item contacto">
           <div className="contacto-email">

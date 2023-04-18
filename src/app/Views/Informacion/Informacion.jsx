@@ -2,9 +2,9 @@ import React from 'react'
 import HomeStyled from './Informacion.styled';
 import imgHeader from '../../assets/images/img-contacto-header.png';
 import { AnimationOnScroll } from 'react-animation-on-scroll';
-import { theme, Card, Input, Button } from "antd";
+import { theme, Card, Button } from "antd";
 
-const { TextArea } = Input;
+// const { TextArea } = Input;
 
 export default function Informacion() {
   const { token: { colorPrimary } } = theme.useToken();
