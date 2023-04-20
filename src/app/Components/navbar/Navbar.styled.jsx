@@ -76,6 +76,7 @@ const Navbar = styled.div`
       flex-direction: column;
       align-items: flex-start;  
       justify-content: flex-start;
+      padding: 14px 0px 0px 25px;
 
       .navigation {
         flex-direction: column;
@@ -84,12 +85,10 @@ const Navbar = styled.div`
         justify-content: center;
 
         .btn-contacto {
-         margin-left: 16px;
          width: 120px;
         }
         
         .btn-call {
-          margin-left: 16px;
           background-color: #000;
           color: #fff;
           width: 120px;
@@ -99,6 +98,7 @@ const Navbar = styled.div`
       .navigation > button {
         display: block;
         margin: 10px 0px;
+        padding-left: 0px;
       }
 
       button.icon {
