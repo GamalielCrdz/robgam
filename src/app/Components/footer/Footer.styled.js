@@ -1,9 +1,11 @@
 import styled from "styled-components";
 
 const Footer = styled.div`
+  width: 100%;
+  max-width: 1280px;
+
   .footer-container {
     overflow: hidden;
-    
     display: flex;
     justify-content: space-between;
     align-items: center;

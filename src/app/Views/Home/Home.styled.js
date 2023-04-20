@@ -97,6 +97,7 @@ const Home = styled.div`
         .cita {
           width: 100%;
           font-size: 18px;
+          text-align: center;
         }
       }
     }

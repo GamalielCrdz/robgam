@@ -15,6 +15,9 @@ const Layout = styled.div`
     background: #000;
     color: #fff;
     padding-inline: 80px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
   }
 
   .layout {

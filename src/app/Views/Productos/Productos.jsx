@@ -1,6 +1,5 @@
 import React from 'react'
 import HomeStyled from './Productos.styled';
-import imgHeader from '../../assets/images/img-productos-header.png';
 import imgPallets from '../../assets/icons/icon-pallets.svg';
 import imgProductosPallets from '../../assets/images/img-productos-pallets.png';
 import imgProductosElegir from '../../assets/images/img-productos-elegir.png';
@@ -14,9 +13,9 @@ export default function Productos() {
   return (
     <HomeStyled colorPrimary={colorPrimary} >
 
-      <div className='seccion seccion-column nuestro'>
-        <div className='seccion-row img-header'>
-          <div className='title' >
+      <div className='seccion header-robgam'>
+        <div className='inner' >
+          <div className='side header-title' >
             <AnimationOnScroll animateIn="animate__fadeInUp" >
               <h1>
                 Nuestros
@@ -24,14 +23,17 @@ export default function Productos() {
               </h1>
             </AnimationOnScroll>
           </div>
-          <div className='image-container' >
-            <img src={imgHeader} alt="produc-header" height={239} />
+
+          <div className='side image-backgorund header' >
           </div>
         </div>
-        <div className='seccion-row' >
-          <div className='text'>
+      </div>
+
+      <div className='seccion info' >
+        <div className='inner'>
+          <div className='side' >
             <AnimationOnScroll animateIn="animate__fadeInUp" >
-              <p className='main-text' >
+              <p className='text' >
                 Las pallets de madera estandarizadas o hechas a medida, nuevas o reacondicionadas ofrecen una multitud de respuestas,combinan parámetros económicos y ecológicos. Son fácilmente reparables y recuperables al final de su vida útil; ofrecen una imagen de naturalidad y autenticidad en perfecta armonía con la sociedad actual, apegada a consideraciones medioambientales. Los pallets de madera son ampliamente utilizados por fabricantes y distribuidores.
               </p>
             </AnimationOnScroll>
@@ -39,12 +41,12 @@ export default function Productos() {
         </div>
       </div>
 
-      <div className='seccion seccion-column productos'>
-        <div className='seccion-row img-header productos'>
-          <div className="sobre-side texto">
+      <div className='seccion productos'>
+        <div className='inner'>
+          <div className="side texto">
             <AnimationOnScroll animateIn="animate__fadeInUp" >
               <div className="parrafo">
-                <div className="img-container">
+                <div className="img-icon">
                   <img src={imgPallets} alt="target" />
                 </div>
                 <h2>Pallets nuevos</h2>
@@ -54,7 +56,7 @@ export default function Productos() {
               </div>
 
               <div className="parrafo">
-                <div className="img-container">
+                <div className="img-icon">
                   <img src={imgPallets} alt="vision" />
                 </div>
                 <h2>Pallets reciclados</h2>
@@ -64,7 +66,7 @@ export default function Productos() {
               </div>
 
               <div className="parrafo">
-                <div className="img-container">
+                <div className="img-icon">
                   <img src={imgPallets} alt="vision" />
                 </div>
                 <h2>Pallets de madera</h2>
@@ -75,56 +77,51 @@ export default function Productos() {
 
             </AnimationOnScroll>
           </div>
-          <div className='image-container' >
-            <img src={imgProductosPallets} alt="produc-header" />
+
+          <div className='side image-backgorund' >
           </div>
         </div>
       </div>
 
-      <div className='seccion seccion-column elegir'>
-        <div className='seccion-row img-header elegir'>
+      <div className='seccion elegir'>
+        <div className='inner'>
+          <div className="side texto">
+            <AnimationOnScroll animateIn="animate__fadeInUp" className='parrafo'  >
+              <h1>Elegir nuestros pallets
+                <br />
+                de madera es elegir:
+              </h1>
+            </AnimationOnScroll>
 
-          <div className="sobre-side texto">
-            <AnimationOnScroll animateIn="animate__fadeInUp" >
-
-              <div className="parrafo ">
-                <h1>Elegir nuestros pallets
-                  <br/>
-                    de madera es elegir:
-                </h1>
+            <AnimationOnScroll animateIn="animate__fadeInUp" className='parrafo'  >
+              <div className="img-icon">
+                <img src={imgPallets} alt="target" />
               </div>
+              <p className='text' >
+                La solución económica gracias a una materia prima competitiva.
+              </p>
+            </AnimationOnScroll>
 
-              <div className="parrafo">
-                <div className="img-container">
-                  <img src={imgPallets} alt="target" />
-                </div>
-                <p>
-                  La solución económica gracias a una materia prima competitiva.
-                </p>
+            <AnimationOnScroll animateIn="animate__fadeInUp" className='parrafo'  >
+              <div className="img-icon">
+                <img src={imgPallets} alt="vision" />
               </div>
+              <p className='text' >
+                La solución personalizada porque es posible hacer todo tipo de modelos de pallets sin ninguna restricción particular.
+              </p>
+            </AnimationOnScroll>
 
-              <div className="parrafo">
-                <div className="img-container">
-                  <img src={imgPallets} alt="vision" />
-                </div>
-                <p>
-                  La solución personalizada porque es posible hacer todo tipo de modelos de pallets sin ninguna restricción particular.
-                </p>
+            <AnimationOnScroll animateIn="animate__fadeInUp" className='parrafo'  >
+              <div className="img-icon">
+                <img src={imgPallets} alt="vision" />
               </div>
-
-              <div className="parrafo">
-                <div className="img-container">
-                  <img src={imgPallets} alt="vision" />
-                </div>
-                <p>
-                  La solución medioambiental porque la madera es ecológica-material por excelencia, natural, renovable y reciclable que contribuye a la lucha contra el efecto invernadero.
-                </p>
-              </div>
-
+              <p className='text' >
+                La solución medioambiental porque la madera es ecológica-material por excelencia, natural, renovable y reciclable que contribuye a la lucha contra el efecto invernadero.
+              </p>
             </AnimationOnScroll>
           </div>
 
-          <div className='image-container' >
+          <div className='side imagen' >
             <img className='img-vision-pallets' src={imgProductosElegir} alt="produc-header" />
           </div>
         </div>
