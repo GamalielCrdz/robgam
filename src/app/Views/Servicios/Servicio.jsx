@@ -1,7 +1,5 @@
 import React from 'react'
 import HomeStyled from './Servicio.styled';
-import imgHeader from '../../assets/images/img-servicios-header.png';
-import imgProductosReparacion from '../../assets/images/img-servicios-reparacion.png';
 
 import imgProductosPapel from '../../assets/images/img-servicios-papel.png';
 import imgProductosMadera from '../../assets/images/img-servicios-madera.png';

@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import imgHeader from "../../assets/images/img-inf.adicional-header.png";
-import imgSomos from "../../assets/images/img-header.png";
 import imgProductosEconomia from "../../assets/images/img-inf.adicional-economia.png";
 
 const Home = styled.div`
