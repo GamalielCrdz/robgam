@@ -10,7 +10,7 @@ const Carousel = styled.div`
     margin: 45px 0px;
 
     .item {
-      width: 360px;
+      width: 30%;
       height: 220px;
       padding: 20px;
       border-radius: 16px;

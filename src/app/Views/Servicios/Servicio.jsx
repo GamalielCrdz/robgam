@@ -48,7 +48,6 @@ export default function Nuestro() {
         </div>
       </div>
 
-
       <div className='seccion productos'>
         <div className='inner reverse'>
           <div className='side image-backgorund' >
@@ -76,7 +75,6 @@ export default function Nuestro() {
           </div>
         </div>
       </div>
-
 
       <div className='seccion recolectamos'>
         <div className='inner'>
@@ -129,7 +127,6 @@ export default function Nuestro() {
           </div>
         </div>
       </div>
-
 
       <div className='seccion servicios'>
         <div className="inner">

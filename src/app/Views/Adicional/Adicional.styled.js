@@ -1,4 +1,7 @@
 import styled from "styled-components";
+import imgHeader from "../../assets/images/img-inf.adicional-header.png";
+import imgSomos from "../../assets/images/img-header.png";
+import imgProductosEconomia from "../../assets/images/img-inf.adicional-economia.png";
 
 const Home = styled.div`
   width: 100%;
@@ -13,231 +16,155 @@ const Home = styled.div`
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: flex-start;
-    // height: 100vh;
+    justify-content: center;
+    padding-inline: 80px;
+    padding-block: 40px;
+    position: relative;
 
-    &.nuestro {
-      height: auto;
-    }
-
-    &.seccion-column {
-      flex-direction: column !important;
-      align-items: center;
-      justify-content: flex-start;
-    }
-
-    &.recolectamos {
-      .sobre-side {
-        width: 100% !important;
-
-        .parrafo {
-          width: 50%;
-        }
-
-        .collapse-container {
-          display: flex;
-          justify-content: flex-start;
-          align-items: flex-start;
-          width: 100%;
-
-          .ant-space {
-            width: 100%;
-          }
-          .ant-collapse-header-text {
-            text-align: left;
-            font-weight: 600;
-          }
-          .parrafo {
-            margin: 0px;
-            width: 100%;
-            p {
-              margin: 0px;
-            }
-          }
-        }
+    .header-title {
+      h1 {
+        font-family: Montserrat;
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 58px;
+        letter-spacing: 0em;
+        text-align: center;
+        color: #fff;
+        margin: 0px;
+      }
+      p {
+        margin: 0px;
       }
     }
 
-    &.servicios {
-      background-color: ${(props) =>
-        props.colorPrimary ? props.colorPrimary : "white"};
-
-      .servicios-container {
-        background-color: white;
-        margin: 80px;
-        border-radius: 16px;
-        padding: 24px;
-
-        .img-header {
-          background-color: #fff;
-
-          .sobre-side {
-            background-color: #fff;
-
-            .parrafo {
-              h1 {
-                color: #000;
-              }
-              p {
-                color: #5b5b5b;
-              }
-            }
-          }
-        }
-      }
-    }
-
-    .seccion-row {
+    .inner {
       width: 100%;
+      max-width: 1280px;
       display: flex;
       flex-direction: row;
+      justify-content: space-between;
       align-items: center;
-      justify-content: flex-start;
+
+      &.reverse {
+        justify-content: flex-end;
+        .image-backgorund {
+          position: absolute;
+          left: 0% !important;
+          width: 50%;
+          top: 0px;
+          bottom: 0px;
+        }
+      }
+
+      .side {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+
+        &.image-backgorund {
+          position: absolute;
+          left: 50%;
+          width: 50%;
+          top: 0px;
+          bottom: 0px;
+          background: url(${imgHeader});
+          background-position: left top;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+      }
     }
 
-    .img-header {
+    &.header-robgam {
+      height: auto;
+      min-height: 370px;
       background: ${(props) =>
         props.colorPrimary ? props.colorPrimary : "white"};
-      color: white;
-      justify-content: space-between;
 
-      &.productos {
-        background: #000;
-      }
-
-      &.elegir {
-        background: #fff;
-        padding: 50px 0px;
-
-        .sobre-side {
-          background: #fff;
-        }
-
-        .parrafo {
-          h1 {
-            color: #000000;
-            font-size: 48px;
-            font-size: 48px;
-            font-weight: 600;
-            line-height: 58px;
-            letter-spacing: 0em;
-            text-align: left;
-          }
-
-          p {
-            color: #6e6e86;
-          }
-          .img-container {
-            background: ${(props) =>
-              props.colorPrimary ? props.colorPrimary : "white"};
-          }
-        }
-
-        .image-container {
-          justify-content: center;
-          img {
-            width: 450px;
-          }
-        }
-      }
-      
-      &.testimonios {
-        flex-direction: column;
-        background-color: ${(props) =>
-        props.colorPrimary ? props.colorPrimary : "white"};
-
-        h1 {
-          width: 100%;
-        }
-        .parrafo-text {
-          width: 100%;
-        }
-      }
-
-      .title {
-        width: 40%;
-        height: 100%;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-      }
-
-      .image-container {
-        width: 40%;
-        height: 100%;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: flex-end;
-
-        img {
-          width: 100%;
-        }
+      .image-backgorund {
+        background: url(${imgHeader}) left top / cover no-repeat !important;
       }
     }
 
-    .text {
-      width: 40%;
-      margin: 80px;
+    &.productos {
+      background-color: #000;
+      color: #fff;
+      height: 700px;
 
-      p {
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 26px;
-        color: #5b5b5b;
-        text-align: start;
-      }
-    }
+      .texto {
+        padding-left: 90px;
 
-    .sobre-side {
-      width: 45%;
-      background: #000;
-      padding: 0px 20px;
-
-      img {
-        max-width: 100%;
-      }
-
-      &.texto {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: center;
-        height: 100%;
-        width: 50%;
-      }
-
-      .parrafo {
-        text-align: start;
-        margin-bottom: 40px;
-
-        h1 {
+        .title {
+          font-family: Montserrat;
           font-size: 48px;
+          font-weight: 600;
+          line-height: 58px;
+          letter-spacing: 0em;
         }
 
-        p {
-          line-height: 25.9px;
+        .text {
+          font-family: Roboto;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 26px;
+          letter-spacing: 0em;
           color: #fff;
         }
 
-        .parrafo-text {
-          margin-bottom: 1em;
+        h2 {
+          text-align: left;
+        }
+      }
+
+      .image-backgorund {
+        background: url(${imgProductosEconomia}) bottom center / cover no-repeat !important;
+      }
+    }
+
+    &.recolectamos {
+      .side {
+        width: 100%;
+        justify-content: flex-start;
+        align-items: flex-start;
+        text-align: left;
+
+        .parrafo {
+          text-align: left;  
         }
 
-        .img-container {
-          background: #fff;
-          display: flex;
-          justify-content: center;
-          width: 40px;
-          height: 40px;
-          padding: 2px;
-          border-radius: 4px;
-          margin: 15px 0px;
-
-          img {
-            width: 30px;
+        .collapse-container {
+          width: 100%;
+          .space {
+            width: 100%;
           }
+        }
+      }
+    }
+
+    &.testimonios {
+      background: ${(props) => props.colorPrimary ? props.colorPrimary : "white"};
+      color: #fff;
+
+      .side {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        text-align: center ;
+
+        .parrafo {
+          text-align: left;  
+        }
+
+        .collapse-container {
+          width: 100%;
+          .space {
+            width: 100%;
+          }
+        }
+        
+        .carrousel-container {
+          width: 100%;
         }
       }
     }
@@ -246,82 +173,61 @@ const Home = styled.div`
   @media screen and (max-width: 600px) {
     .seccion {
       flex-direction: column;
+      padding-inline: 20px;
+      text-align: center;
 
-      &.nuestro {
-        .image-container {
+      .inner {
+        flex-direction: column-reverse;
+
+        .side {
           width: 100%;
+
+          &.image-backgorund {
+            position: relative;
+            width: 300px;
+            height: 220px;
+            left: 0px;
+            top: 0px;
+            bottom: 0px;
+
+            &.header {
+              height: 180px;
+              background: url(${imgHeader}) left top / cover no-repeat,
+                linear-gradient(
+                  to right,
+                  white 20%,
+                  white 20%,
+                  white 80%,
+                  white 0
+                ) !important;
+              width: 100vw;
+              margin-left: -20px;
+              margin-right: -20px;
+            }
+          }
         }
       }
 
-      .testimonios {
-        padding-bottom: 25px;
-      }
+      &.header-robgam {
+        padding-top: 10px;
+        padding-bottom: 0px;
+        min-height: auto;
 
-      .sobre-side {
-        &.texto {
-          width: 100%;
+        .inner {
+          flex-direction: column;
+
+          .header-title {
+            margin-bottom: 10px;
+          }
         }
       }
 
       &.productos {
+        height: auto;
 
-        .image-container {
-          width: 100%;
+        .texto {
+          padding: 0px;
         }
-      }
-
-      .seccion-row {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-
-        &.productos {
-          flex-direction: column-reverse;
-
-          .image-container {
-            justify-content: center;
-            background: rgb(0, 0, 0);
-
-            img {
-              width: 90%;
-              margin-bottom: 10px;
-            }
-          }
-        }
-
-        &.recolectamos {
-          .parrafo {
-            width: 100%;
-          }
-
-          .pictures-container {
-            flex-direction: column;
-            .picture {
-              padding: 5px 0px;
-            }
-          }
-        }
-
-
-        .image-container {
-          background-color: white;
-
-          .img-vision-pallets {
-            width: 300px !important;
-          }
-        }
-
-        .title {
-          p {
-            margin: 0px;
-          }
-        }
-      }
-
-      .text {
-        margin: 0px;
-        padding: 20px;
-        width: 100%;
       }
     }
   }
