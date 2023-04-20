@@ -46,6 +46,10 @@ const Home = styled.div`
       justify-content: space-between;
       align-items: center;
 
+      &.reverse {
+        justify-content: flex-end;
+      }
+
       .side {
         display: flex;
         flex-direction: column;

@@ -1,4 +1,7 @@
 import styled from "styled-components";
+import imgSomos from "../../assets/images/img-header.png";
+import imgHeader from "../../assets/images/img-servicios-header.png";
+import imgProductosReparacion from "../../assets/images/img-servicios-reparacion.png";
 
 const Home = styled.div`
   width: 100%;
@@ -14,25 +17,116 @@ const Home = styled.div`
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: flex-start;
-    // height: 100vh;
+    justify-content: center;
+    padding-inline: 80px;
+    padding-block: 40px;
+    position: relative;
 
-    &.nuestro {
-      height: auto;
+    .header-title {
+      h1 {
+        font-family: Montserrat;
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 58px;
+        letter-spacing: 0em;
+        text-align: center;
+        color: #fff;
+        margin: 0px;
+      }
+      p {
+        margin: 0px;
+      }
     }
 
-    &.seccion-column {
-      flex-direction: column !important;
+    .inner {
+      width: 100%;
+      max-width: 1280px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
       align-items: center;
-      justify-content: flex-start;
+
+      &.reverse {
+        justify-content: flex-end;
+        .image-backgorund {
+          position: absolute;
+          left: 0% !important;
+          width: 50%;
+          top: 0px;
+          bottom: 0px;
+        }
+      }
+
+      .side {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+
+        &.image-backgorund {
+          position: absolute;
+          left: 50%;
+          width: 50%;
+          top: 0px;
+          bottom: 0px;
+          background: url(${imgSomos});
+          background-position: left top;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+      }
+    }
+
+    &.header-robgam {
+      height: auto;
+      min-height: 370px;
+      background: ${(props) =>
+        props.colorPrimary ? props.colorPrimary : "white"};
+
+      .image-backgorund {
+        background: url(${imgHeader}) left top / cover no-repeat !important;
+      }
+    }
+
+    &.productos {
+      background-color: #000;
+      color: #fff;
+      height: 700px;
+
+      .texto {
+        padding-left: 90px;
+
+        .title {
+          font-family: Montserrat;
+          font-size: 48px;
+          font-weight: 600;
+          line-height: 58px;
+          letter-spacing: 0em;
+        }
+
+        .text {
+          font-family: Roboto;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 26px;
+          letter-spacing: 0em;
+          color: #fff;
+        }
+      }
+
+      .image-backgorund {
+        background: url(${imgProductosReparacion}) bottom center / cover
+          no-repeat !important;
+      }
     }
 
     &.recolectamos {
-      .sobre-side {
-        width: 100% !important;
+      .side {
+        width: 100%;
+        align-items: flex-start;
 
-        .parrafo {
-          width: 50%;
+        .texto {
+          width: 55%;
         }
 
         .pictures-container {
@@ -44,186 +138,52 @@ const Home = styled.div`
 
           .picture {
             padding: 0px 2px;
-            width: 250px;
+            width: 20%;
+          }
 
-            img {
-              width: 100%;
-            }
+          img {
+            width: 100%;
+          }
 
-            .picture-title {
-              &.black {
-                background-color: #000;
-              }
-              background-color: ${(props) => props.colorPrimary ? props.colorPrimary : "white"};
-              width: 100%;
-              height: 38px;
-              font-size: 32px;
-              font-weight: 500;
+          .picture-title {
+            &.black {
+              background-color: #000;
             }
+            color: #fff;
+            background-color: ${(props) =>
+              props.colorPrimary ? props.colorPrimary : "white"};
+            width: 100%;
+            height: 38px;
+            font-size: 32px;
+            font-weight: 500;
+            text-align: center;
           }
         }
       }
     }
 
     &.servicios {
-      background-color: ${(props) =>
-        props.colorPrimary ? props.colorPrimary : "white"};
-
-      .servicios-container {
-        background-color: white;
-        margin: 80px;
-        border-radius: 16px;
-        padding: 24px;
-
-        .img-header {
-          background-color: #fff;
-
-          .sobre-side {
-            background-color: #fff;
-
-            .parrafo {
-              h1 {
-                color: #000;
-              }
-              p {
-                color: #5b5b5b;
-              }
-            }
-          }
-        }
-      }
-    }
-
-    .seccion-row {
-      width: 100%;
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: flex-start;
-    }
-
-    .img-header {
       background: ${(props) =>
         props.colorPrimary ? props.colorPrimary : "white"};
-      color: white;
-      justify-content: space-between;
 
-      &.productos {
-        background: #000;
-      }
+      .inner {
+        background: #f4f4f4;
+        border-radius: 16px;
 
-      &.elegir {
-        background: #fff;
-        padding: 50px 0px;
-
-        .sobre-side {
-          background: #fff;
-        }
-
-        .parrafo {
-          h1 {
-            color: #000000;
-          }
-
-          p {
-            color: #6e6e86;
-          }
-          .img-container {
-            background: ${(props) =>
-              props.colorPrimary ? props.colorPrimary : "white"};
-          }
-        }
-
-        .image-container {
-          justify-content: center;
-          img {
-            width: 450px;
-          }
-        }
-      }
-
-      .title {
-        width: 40%;
-        height: 100%;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-      }
-
-      .image-container {
-        width: 40%;
-        height: 100%;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: flex-end;
-
-        img {
+        .side {
           width: 100%;
-        }
-      }
-    }
+          flex-direction: row;
+          padding: 24px 24px 24px 48px;
 
-    .text {
-      width: 40%;
-      margin: 80px;
+          .texto {
+            width: 50%;
+          }
 
-      p {
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 26px;
-        color: #5b5b5b;
-      }
-    }
-
-    .sobre-side {
-      width: 45%;
-      background: #000;
-      /* padding: 0px 20px; */
-
-      img {
-        max-width: 100%;
-      }
-
-      &.texto {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: center;
-        height: 100%;
-        width: 50%;
-      }
-
-      .parrafo {
-        
-        margin-bottom: 40px;
-
-        /* h1 {
-          font-size: 48px;
-        } */
-
-        p {
-          line-height: 25.9px;
-          color: #fff;
-        }
-
-        .parrafo-text {
-          margin-bottom: 1em;
-        }
-
-        .img-container {
-          background: #fff;
-          display: flex;
-          justify-content: center;
-          width: 40px;
-          height: 40px;
-          padding: 2px;
-          border-radius: 4px;
-          margin: 15px 0px;
-
-          img {
-            width: 30px;
+          .image-container {
+            width: 50%;
+            img {
+              width: 100%;
+            }
           }
         }
       }
@@ -233,66 +193,95 @@ const Home = styled.div`
   @media screen and (max-width: 600px) {
     .seccion {
       flex-direction: column;
-      text-align: center!important;
-      
-      .servicios-container {
-        margin: 10px!important;
-      }
+      padding-inline: 20px;
+      text-align: center;
 
-      .seccion-row {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
+      .inner {
+        flex-direction: column-reverse;
 
-        &.productos {
-          flex-direction: column-reverse;
+        .side {
+          width: 100%;
 
-          .image-container {
-            justify-content: center;
-            background: rgb(0, 0, 0);
+          &.image-backgorund {
+            position: relative;
+            width: 300px;
+            height: 220px;
+            left: 0px;
+            top: 0px;
+            bottom: 0px;
 
-            img {
-              width: 90%;
-              margin-bottom: 10px;
+            &.header {
+              height: 180px;
+              background: url(${imgHeader}) left top / cover no-repeat,
+                linear-gradient(
+                  to right,
+                  white 20%,
+                  white 20%,
+                  white 80%,
+                  white 0
+                ) !important;
+              width: 100vw;
+              margin-left: -20px;
+              margin-right: -20px;
             }
           }
         }
+      }
 
-        &.recolectamos {
-          .parrafo {
+      &.header-robgam {
+        padding-top: 10px;
+        padding-bottom: 0px;
+        min-height: auto;
+
+        .inner {
+          flex-direction: column;
+
+          .header-title {
+            margin-bottom: 10px;
+          }
+        }
+      }
+
+      &.productos {
+        height: auto;
+
+        .texto {
+          padding: 0px;
+        }
+      }
+
+      &.recolectamos {
+        .side {
+          .texto {
             width: 100%;
           }
-
           .pictures-container {
             flex-direction: column;
             .picture {
               padding: 5px 0px;
+              width: auto;
             }
-          }
-        }
-
-        > div {
-          width: 100% !important;
-        }
-
-        .image-container {
-          background-color: white;
-
-          .img-vision-pallets {
-            width: 300px !important;
-          }
-        }
-
-        .title {
-          p {
-            margin: 0px;
           }
         }
       }
 
-      .text {
-        margin: 0px;
-        padding: 20px;
+      &.servicios {
+        .inner {
+          .side {
+            flex-direction: column;
+
+            .texto {
+              width: 100%;
+            }
+
+            .image-container {
+              width: 100%;
+              img {
+                width: 100%;
+              }
+            }
+          }
+        }
       }
     }
   }
