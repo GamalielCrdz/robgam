@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "./static/css/main.e92a42b3.css",
+    "main.js": "./static/js/main.bdeaec43.js",
+    "static/js/787.6b78190a.chunk.js": "./static/js/787.6b78190a.chunk.js",
+    "static/media/img-header.png": "./static/media/img-header.8824ebe566b86dfdc7a8.png",
+    "static/media/img-servicios-scrap.png": "./static/media/img-servicios-scrap.e265745703ea7d4ce6c6.png",
+    "static/media/img-productos-pallets.png": "./static/media/img-productos-pallets.d3dc2c912f693b2b9d8b.png",
+    "static/media/img-inf.adicional-economia.png": "./static/media/img-inf.adicional-economia.5b836108a10200d4a8c7.png",
+    "static/media/img-prod.png": "./static/media/img-prod.5e3c5d6c55dbf419e5c4.png",
+    "static/media/img-productos-elegir.png": "./static/media/img-productos-elegir.5efbdda7291bb2fc0442.png",
+    "static/media/img-inf.adicional-header.png": "./static/media/img-inf.adicional-header.549c894e3546dd3680bf.png",
+    "static/media/img-conoce.png": "./static/media/img-conoce.c3815234ffbd1fe81b28.png",
+    "static/media/img-contacto-header.png": "./static/media/img-contacto-header.2c096842b8e1048c76dd.png",
+    "static/media/img-productos-header.png": "./static/media/img-productos-header.672ad0c225338a921f50.png",
+    "static/media/img-servicios-reparacion.png": "./static/media/img-servicios-reparacion.3f817e34b0c3b139ede3.png",
+    "static/media/img-servicios-header.png": "./static/media/img-servicios-header.7303d18673d0ce07cfce.png",
+    "static/media/img-sobre.png": "./static/media/img-sobre.83b351f08b8886c6f9e8.png",
+    "static/media/img-servicios-carton.png": "./static/media/img-servicios-carton.5bda81006d490b309dc7.png",
+    "static/media/img-servicios-madera.png": "./static/media/img-servicios-madera.57a47a690cb1bfb62dfb.png",
+    "static/media/img-servicios-plast.png": "./static/media/img-servicios-plast.0ade66debfce81726f52.png",
+    "static/media/img-servicios-papel.png": "./static/media/img-servicios-papel.b78fde462a6c3f746b29.png",
+    "static/media/img-servicios-metal.png": "./static/media/img-servicios-metal.c0d21c01d73db22ea661.png",
+    "static/media/logo-robgam.svg": "./static/media/logo-robgam.8bc50c8f3b3926d2514df580f1fa9919.svg",
+    "static/media/logo-robgam-footer.svg": "./static/media/logo-robgam-footer.3b0574415b5ddfe3e2bcfae47d0bf30c.svg",
+    "static/media/target.svg": "./static/media/target.7fc12c5e6d85bf1c790fb13f735387de.svg",
+    "static/media/vision.svg": "./static/media/vision.f99697293a6c9614e64a050a73692458.svg",
+    "static/media/icon-pallets.svg": "./static/media/icon-pallets.eea4da6f7c92bb5a93c53e8388f057fd.svg",
+    "index.html": "./index.html",
+    "main.e92a42b3.css.map": "./static/css/main.e92a42b3.css.map",
+    "main.bdeaec43.js.map": "./static/js/main.bdeaec43.js.map",
+    "787.6b78190a.chunk.js.map": "./static/js/787.6b78190a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e92a42b3.css",
+    "static/js/main.bdeaec43.js"
+  ]
+}

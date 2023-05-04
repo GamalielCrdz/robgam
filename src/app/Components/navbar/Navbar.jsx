@@ -46,7 +46,7 @@ export default function Navbar() {
           <Button onClick={onClick} type="primary" size='large' className='btn-contacto' >
             <Link to={`/Contacto`}>Contacto</Link>
           </Button>
-          <Button onClick={onClick} icon={<PhoneFilled />} type="default" size='large' className='btn-call' >
+          <Button onClick={onClick} icon={<PhoneFilled />} type="link" size='large' className='btn-call' href='tel:81-130-601-68' >
             Llamar
           </Button>
         </div>

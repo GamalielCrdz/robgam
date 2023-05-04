@@ -89,6 +89,7 @@ const Navbar = styled.div`
         }
         
         .btn-call {
+          display: block;
           background-color: #000;
           color: #fff;
           width: 120px;

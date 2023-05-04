@@ -17,8 +17,8 @@ export default function Informacion() {
           <div className='side header-title' >
             <AnimationOnScroll animateIn="animate__fadeInUp" >
               <h1>
-                Información de
-                <p> contacto </p>
+                Información 
+                <p> de contacto </p>
               </h1>
             </AnimationOnScroll>
           </div>
