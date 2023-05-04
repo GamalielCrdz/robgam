@@ -23,6 +23,8 @@ const Home = styled.div`
     position: relative;
 
     .header-title {
+      align-items: flex-start!important;
+
       h1 {
         font-family: Montserrat;
         font-size: 48px;
@@ -32,6 +34,7 @@ const Home = styled.div`
         text-align: center;
         color: #fff;
         margin: 0px;
+        text-align: left;
       }
       p {
         margin: 0px;
@@ -84,6 +87,10 @@ const Home = styled.div`
     &.productos {
       background-color: #000;
       color: #fff;
+
+      .img-icon{
+        background-color: #fff;
+      }
 
       .image-backgorund {
         background: url(${imgProductosPallets}) left top / cover no-repeat !important;

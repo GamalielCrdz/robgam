@@ -1,7 +1,8 @@
 import React from 'react'
 import HomeStyled from './Productos.styled';
 import imgPallets from '../../assets/icons/icon-pallets.svg';
-import imgProductosPallets from '../../assets/images/img-productos-pallets.png';
+import imgBulletBlack from '../../assets/icons/icon-robgam-bullet-sobre-negro.svg';
+import imgBulletWhite from '../../assets/icons/icon-robgam-bullet-sobre-blanco.svg';
 import imgProductosElegir from '../../assets/images/img-productos-elegir.png';
 import { AnimationOnScroll } from 'react-animation-on-scroll';
 import { theme } from "antd";
@@ -47,7 +48,7 @@ export default function Productos() {
             <AnimationOnScroll animateIn="animate__fadeInUp" >
               <div className="parrafo">
                 <div className="img-icon">
-                  <img src={imgPallets} alt="target" />
+                  <img src={imgBulletBlack} alt="target" />
                 </div>
                 <h2>Pallets nuevos</h2>
                 <p>
@@ -57,7 +58,7 @@ export default function Productos() {
 
               <div className="parrafo">
                 <div className="img-icon">
-                  <img src={imgPallets} alt="vision" />
+                  <img src={imgBulletBlack} alt="vision" />
                 </div>
                 <h2>Pallets reciclados</h2>
                 <p>
@@ -67,7 +68,7 @@ export default function Productos() {
 
               <div className="parrafo">
                 <div className="img-icon">
-                  <img src={imgPallets} alt="vision" />
+                  <img src={imgBulletBlack} alt="vision" />
                 </div>
                 <h2>Pallets de madera</h2>
                 <p>
@@ -95,7 +96,7 @@ export default function Productos() {
 
             <AnimationOnScroll animateIn="animate__fadeInUp" className='parrafo'  >
               <div className="img-icon">
-                <img src={imgPallets} alt="target" />
+                <img src={imgBulletWhite} alt="target" />
               </div>
               <p className='text' >
                 La solución económica gracias a una materia prima competitiva.
@@ -104,7 +105,7 @@ export default function Productos() {
 
             <AnimationOnScroll animateIn="animate__fadeInUp" className='parrafo'  >
               <div className="img-icon">
-                <img src={imgPallets} alt="vision" />
+                <img src={imgBulletWhite} alt="vision" />
               </div>
               <p className='text' >
                 La solución personalizada porque es posible hacer todo tipo de modelos de pallets sin ninguna restricción particular.
@@ -113,7 +114,7 @@ export default function Productos() {
 
             <AnimationOnScroll animateIn="animate__fadeInUp" className='parrafo'  >
               <div className="img-icon">
-                <img src={imgPallets} alt="vision" />
+                <img src={imgBulletWhite} alt="vision" />
               </div>
               <p className='text' >
                 La solución medioambiental porque la madera es ecológica-material por excelencia, natural, renovable y reciclable que contribuye a la lucha contra el efecto invernadero.

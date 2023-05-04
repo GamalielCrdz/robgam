@@ -4,6 +4,7 @@ import AdicionalStyled from './Adicional.styled';
 import { AnimationOnScroll } from 'react-animation-on-scroll';
 import { Collapse, Space, theme } from "antd";
 import Carousel from '../../Components/carousel/Carousel';
+import { Link } from 'react-router-dom';
 const { Panel } = Collapse;
 
 export default function Adicional() {
@@ -86,7 +87,8 @@ export default function Adicional() {
             <div className="parrafo" >
               <AnimationOnScroll animateIn="animate__fadeInUp" >
                 <p className='text' >
-                  Puedes revisar algunas de las preguntas qué nuestros clientes nos han hecho para solucionar sus dudas, o bien si prefieres puedes contactarnos para ayudarte a resolverlas.
+                  Puedes revisar algunas de las preguntas qué nuestros clientes nos han hecho para solucionar sus dudas, o bien si prefieres puedes  
+                  <Link className='contacto-link' to={'/Contacto'} > contactarnos</Link> para ayudarte a resolverlas.
                 </p>
               </AnimationOnScroll>
             </div>

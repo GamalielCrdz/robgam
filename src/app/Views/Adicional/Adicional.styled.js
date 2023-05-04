@@ -21,6 +21,8 @@ const Home = styled.div`
     position: relative;
 
     .header-title {
+      align-items: flex-start!important;
+
       h1 {
         font-family: Montserrat;
         font-size: 48px;
@@ -30,6 +32,7 @@ const Home = styled.div`
         text-align: center;
         color: #fff;
         margin: 0px;
+        text-align: left;
       }
       p {
         margin: 0px;
@@ -130,6 +133,10 @@ const Home = styled.div`
 
         .parrafo {
           text-align: left;  
+        }
+
+        .contacto-link {
+          color: ${(props) => props.colorPrimary ? props.colorPrimary : "white"};
         }
 
         .collapse-container {

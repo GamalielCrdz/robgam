@@ -1,13 +1,14 @@
 import React from 'react'
 import HomeStyled from './Home.styled'
-import imgSobre from '../../assets/images/img-sobre.png';
+import bulletRojo from '../../assets/icons/icon-robgam-bullet-sobre-rojo.svg';
 import imgTarget from '../../assets/icons/target.svg';
 import imgVision from '../../assets/icons/vision.svg';
-import imgPallets from '../../assets/icons/icon-pallets.svg';
-import imgProd from '../../assets/images/img-prod.png';
+import imgFrase from '../../assets/icons/icon-frase.svg';
+import imgAbout from '../../assets/images/img-about.png';
 import imgConoce from '../../assets/images/img-conoce.png';
 import { AnimationOnScroll } from 'react-animation-on-scroll';
 import { Button, theme } from "antd";
+import { Link } from 'react-router-dom';
 
 export default function Home() {
   const { token: { colorPrimary } } = theme.useToken();
@@ -31,7 +32,7 @@ export default function Home() {
       <div className="seccion sobre">
         <div className="inner">
           <div className="side image">
-            <img src={imgSobre} className='robgam' alt="sobre" />
+            <img src={imgAbout} className='robgam' alt="sobre" />
           </div>
           <div className="side texto">
             <AnimationOnScroll animateIn="animate__fadeInUp" >
@@ -66,6 +67,7 @@ export default function Home() {
 
       <div className="seccion frase">
         <div className="down-side">
+          <img src={imgFrase} alt="coma" />
           <AnimationOnScroll animateIn="animate__fadeInUp" >
             <div>
               <h1>
@@ -74,7 +76,6 @@ export default function Home() {
               <p className='cita' >-Roberto Gamboa / Fundador CEO</p>
             </div>
           </AnimationOnScroll>
-
         </div>
       </div>
 
@@ -88,7 +89,7 @@ export default function Home() {
 
             <AnimationOnScroll className='producto' animateIn="animate__fadeInUp" >
               <div className='producto-img'>
-                <img src={imgPallets} alt='prod-1' />
+                <img src={bulletRojo} alt='prod-1' />
               </div>
               <div className='producto-desc'>
                 <h2>
@@ -99,7 +100,7 @@ export default function Home() {
 
             <AnimationOnScroll className='producto' animateIn="animate__fadeInUp" >
               <div className='producto-img'>
-                <img src={imgPallets} alt='prod-1' />
+                <img src={bulletRojo} alt='prod-1' />
               </div>
               <div className='producto-desc'>
                 <h2>
@@ -110,7 +111,7 @@ export default function Home() {
 
             <AnimationOnScroll className='producto' animateIn="animate__fadeInUp" >
               <div className='producto-img'>
-                <img src={imgPallets} alt='prod-1' />
+                <img src={bulletRojo} alt='prod-1' />
               </div>
               <div className='producto-desc'>
                 <h2>
@@ -121,7 +122,7 @@ export default function Home() {
 
             <AnimationOnScroll className='producto' animateIn="animate__fadeInUp" >
               <div className='producto-img'>
-                <img src={imgPallets} alt='prod-1' />
+                <img src={bulletRojo} alt='prod-1' />
               </div>
               <div className='producto-desc'>
                 <h2>
@@ -132,7 +133,7 @@ export default function Home() {
 
             <AnimationOnScroll className='producto' animateIn="animate__fadeInUp" >
               <div className='producto-img'>
-                <img src={imgPallets} alt='prod-1' />
+                <img src={bulletRojo} alt='prod-1' />
               </div>
               <div className='producto-desc'>
                 <h2>
@@ -155,7 +156,11 @@ export default function Home() {
           <div className="text side">
             <AnimationOnScroll animateIn="animate__fadeInUp" >
               <h1>Conoce más sobre nosotros y también del porqué somos una empresa de confianza</h1>
-              <Button type='primary' size='large' >Conoce más</Button>
+              <Button type='primary' size='large'>
+                <Link to={'/Servicios'} >
+                  Conoce más
+                </Link>
+              </Button>
             </AnimationOnScroll>
           </div>
         </div>
